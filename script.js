@@ -1,4 +1,4 @@
-//이미지 슬라이딩
+// 이미지 슬라이딩
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -21,7 +21,25 @@ function showSlides(n) {
     slides[slideIndex-1].style.display="block";
 }
 
+//자동 이미지 슬라이딩
+var autoSlideIndex = 0;
+autoShowSlides();
 
+function autoShowSlides(){
+    var j;
+    var autoSlides = document.getElementsByClassName("slide");
+    for(j=0; j<autoSlides.length; j++){
+        autoSlides[j].style.display="none";
+    }
+    autoSlideIndex++;
+    if(autoSlideIndex>autoSlides.length){
+        autoSlideIndex=1;
+    }
+    autoSlides[autoSlideIndex-1].style.display="block";
+    setTimeout(autoShowSlides, 2000);
+}
+
+//아코디언
 var acc=document.getElementsByClassName("according");
 var i;
 
@@ -44,6 +62,8 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+
+//로그인
 $(".btn-open").click(function(){
     $(".modal-login").fadeIn();
     $("body").addClass("active");

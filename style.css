@@ -96,6 +96,7 @@ header::after{
     color: white;
     position: relative;
     left: 2px;
+    cursor: pointer;
 }
 
 main{
