@@ -17,3 +17,6 @@
 <img src="https://user-images.githubusercontent.com/91260543/153385830-e5da8f32-3494-4d5c-ad9a-69189491adbf.jpg">
 
 + sign in 버튼을 눌렀을때 페이지를 이동하는 것이 아닌 현재 화면위에 바로 로그인창이 띄어지고 배경 투명도를 낮게 함으로써 화면전환이 아닌 그대로 이어지는듯한 효과를 주어보았습니다. 
+
+## URL
++ http://yunjiyoung.dothome.co.kr/Netflix/
